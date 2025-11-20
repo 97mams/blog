@@ -1,10 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-}
+/* resources/css/app.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
