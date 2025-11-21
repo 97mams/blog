@@ -11,3 +11,5 @@ const BlogController = () => import('#controllers/blog_controller')
 import router from '@adonisjs/core/services/router'
 
 router.get('/', [BlogController, 'index']).as('home_page')
+
+router.get('/blog/:id', [BlogController, 'show']).as('blog_show')

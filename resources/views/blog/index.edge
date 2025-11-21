@@ -7,5 +7,14 @@
     <h1>
       Mon blog
     </h1>
+    <main>
+      <ul>
+        @each(post in posts)
+          <li>
+            <a href="{{ route('blog_show', { id: post.id }) }}">{{ post.title }}</a>
+          </li>
+        @endeach
+      </ul>
+    </main>
   @end
 @end

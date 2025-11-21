@@ -1,0 +1,18 @@
+@layout.app({title:"mon blog"})
+
+  @slot('main')
+    <h1 class="border border-red-500 p-4 text-3xl text-red-500">
+      Modifier un article
+    </h1>
+    <form action="" method="post" enctype="multipart/form-data">
+      <input
+        type="text"
+        name="title"
+        value="{{ post.title }}"
+        placeholder="Titre"
+        class="border p-2 w-full mb-4"
+      />
+      <button type="submit" class="bg-blue-500 text-white p-2 rounded">Mettre à jour</button>
+    </form>
+  @end
+@end
