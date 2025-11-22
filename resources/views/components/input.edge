@@ -1,0 +1,7 @@
+<div>
+  @if(type ==="textarea")
+    <textarea name="{{ name }}" id="{{ name }}">{{ value }}</textarea>
+  @else
+    <input type="text" name="{{ name }}" id="{{ name }}" value="{{ value }}" />
+  @endif
+</div>
